@@ -21,3 +21,35 @@ Pior nota: 7.5
 Média: 9,04
 
 """
+nome = str(input('Informe o nome do atleta:\n'))
+notas = []
+
+c = 1
+for n in range(1, 8):
+    nota = float(input('Informe a nota do {}° Jurado.'.format(c)))
+    notas.append(nota)
+    maximo = max(notas)
+    minimo = min(notas)
+    c += 1
+print('===' * 10)
+
+print('Nome atleta: {}'.format(nome))
+c = 1
+for n in notas:
+    print('Nota do {}° jurado: {}'.format(c, n))
+    c += 1
+
+maximo = max(notas)
+minimo = min(notas)
+notas.remove(maximo)
+notas.remove(minimo)
+
+media = sum(notas) / len(notas)
+print('===' * 10)
+print('Resultado Final:')
+print('Atleta: {}'.format(nome))
+print('Melhor nota: {}'.format(maximo))
+print('Pior nota: {}'.format(minimo))
+print('Média: {}'.format(media))
+print('===' * 10)
+
