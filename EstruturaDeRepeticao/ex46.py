@@ -22,4 +22,33 @@ Resultado final:
 Rodrigo Curvêllo: 5.9 m
 
 """
-print('Teste')
+saltos = []
+s = 1
+print('Informe o seu nome:')
+nome = str(input())
+
+for s in range(1, 6):
+    print('Informe o seu {}° Salto.'.format(s))
+    salto = int(input())
+    saltos.append(salto)
+    s += 1
+print('===' * 10)
+print('Primeiro Salto:{}'.format(saltos[0]))
+print('Segundo Salto:{}'.format(saltos[1]))
+print('Terceiro Salto:{}'.format(saltos[2]))
+print('Quarto Salto:{}'.format(saltos[3]))
+print('Quinto Salto:{}'.format(saltos[4]))
+print('====' * 10)
+
+saltos.sort()
+ordem = saltos[1:4]
+media = sum(ordem) / 3
+
+print('Atleta: {}.'.format(nome))
+print('Seu melhor salto foi de {:.2f} metros.'.format(max(saltos)))
+print('Seu pior salto foi de {:.2f} metros.'.format(min(saltos)))
+print('A média dos demais saltos foram {:.2f} metros.'.format(media))
+
+print('====' * 10)
+
+
