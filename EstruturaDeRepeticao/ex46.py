@@ -49,6 +49,6 @@ print('Seu melhor salto foi de {:.2f} metros.'.format(max(saltos)))
 print('Seu pior salto foi de {:.2f} metros.'.format(min(saltos)))
 print('A média dos demais saltos foram {:.2f} metros.'.format(media))
 
+print('Resultado Final atleta: {} : {:.2f} Metros.'.format(nome, media))
+
 print('=====' * 10)
-
-
