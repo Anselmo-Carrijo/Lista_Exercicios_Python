@@ -25,6 +25,7 @@ Gabarito da Prova:
 
 c = 0
 pontos = 0
+notas = []
 for c in range(1, 11):
     resposta = str(input('Informe a {}° resposta.'.format(c)))
     if c == 1 and resposta == 'a':
@@ -51,4 +52,5 @@ for c in range(1, 11):
     else:
         pontos = pontos
         c += 1
+    notas.append(pontos)
 print('Você acertou {} questões.'.format(pontos))

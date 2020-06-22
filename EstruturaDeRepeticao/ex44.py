@@ -51,14 +51,14 @@ while voto != 0:
         total_votos = soma1 + soma2 + soma3 + soma4 + soma_nulo + soma_branco
         nulos_p = (soma_nulo * 100) / total_votos
         branco_p = (soma_branco * 100) / total_votos
+
+print('Esse eleição teve o total de {} votos válidos.'.format(total_votos))
 print(nome1, 'recebeu', soma1, 'Votos,', nome2, 'Recebeu', soma2, 'Votos,', nome3, 'Recebeu', soma3, 'Votos', 'e', nome4,
       'Recebeu', soma4, 'Votos.')
 print('Teve {} votos nulos e {} votos brancos.'.format(soma_nulo, soma_branco))
 
 print('A porcentagem de votos nulos é de {:.2f}%.'.format(nulos_p))
 print('A porcentagem de votos em brancos  é de {:.2f}%.'.format(branco_p))
-
-
 print(10 * '==========')
 
 
