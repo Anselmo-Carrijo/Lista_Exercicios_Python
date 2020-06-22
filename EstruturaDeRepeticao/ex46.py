@@ -38,7 +38,7 @@ print('Segundo Salto:{}'.format(saltos[1]))
 print('Terceiro Salto:{}'.format(saltos[2]))
 print('Quarto Salto:{}'.format(saltos[3]))
 print('Quinto Salto:{}'.format(saltos[4]))
-print('====' * 10)
+print('=====' * 10)
 
 saltos.sort()
 ordem = saltos[1:4]
@@ -49,6 +49,6 @@ print('Seu melhor salto foi de {:.2f} metros.'.format(max(saltos)))
 print('Seu pior salto foi de {:.2f} metros.'.format(min(saltos)))
 print('A média dos demais saltos foram {:.2f} metros.'.format(media))
 
-print('====' * 10)
+print('=====' * 10)
 
 
