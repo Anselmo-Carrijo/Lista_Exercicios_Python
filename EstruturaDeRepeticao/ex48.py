@@ -5,7 +5,13 @@ Exemplo:
   => 98467321
 
 """
-numero = input('Informe um número inteiro positivo:\n')
+n = int(input("Digite um número: "))
+aux = n
+reverso = 0
 
-print(numero)
+while aux != 0:
+    reverso = reverso * 10 + aux % 10
+    aux //= 10
 
+print("Reverso de", n, ":")
+print(reverso)
