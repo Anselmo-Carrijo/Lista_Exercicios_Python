@@ -4,7 +4,7 @@ Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o us
 
 """
 nota = float(input('Informe um número entre 0 e 10.\n'))
-while nota < 0 or nota > 10:
-    nota = float(input(('Número válido, Tente novamente.\n')))
+while 0 < nota > 10:
+    nota = float(input(('Número Inválido, Tente novamente.\n')))
 else:
     print('Valor válido.Prossiga')
