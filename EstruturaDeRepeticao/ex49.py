@@ -4,14 +4,14 @@ Faça um programa que mostre os n termos da Série a seguir:
 Imprima no final a soma da série.
 
 """
-n = int(input("Digite o valor de n: "))
+n = int(input('Digite o valor de n: '))
 numerador = denominador = 1
 S = 0
 
 for i in range(1, n + 1):
-    print("Termo {}: {}/{}".format(i, numerador, denominador))
-    S += (numerador/denominador)
+    print('Termo {}: {}/{}'.format(i, numerador, denominador))
+    S += (numerador / denominador)
     numerador += 1
     denominador += 2
 
-print("Soma total: {:.2f}".format(S))
+print('Soma total: {:.2f}'.format(S))
