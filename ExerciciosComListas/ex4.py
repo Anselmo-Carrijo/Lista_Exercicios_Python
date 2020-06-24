@@ -13,7 +13,7 @@ for c in range(0, 10):
     while letra not in alf[0] and letra not in alf[1]:
         print('Caracteres especiais e números não são válidos.\n'
               'Digite novamente...')
-        letra = str(input('Informe a {}° letra\n'.format(i))).upper()
+        letra = str(input("Informe a {}° letra\n".format(i))).upper()
     if letra in alf[0]:
         v.append(letra)
     if letra in alf[1]:
