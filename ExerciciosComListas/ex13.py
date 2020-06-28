@@ -4,22 +4,50 @@ a média anual das temperaturas e mostre todas as temperaturas acima da média a
 (mostrar o mês por extenso: 1 – Janeiro, 2 – Fevereiro, . . . ).
 
 """
-print('Informe o mês que deseja inserir as temperaduras.\n'
-      'Basta escolher as opções para mudar os meses.')
+temperatura = []
+meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro',
+         'Novembro', 'Dezembro']
 
-print('1 - Janeiro:\n'
-      '2 - Fevereiro:\n'
-      '3 - Março:\n'
-      '4 - Abril:\n'
-      '5 - Maio:\n'
-      '6 - Junho:\n'
-      '7 - Julho:\n'
-      '8 - Agosto:\n'
-      '9 - Setembro:\n'
-      '10 - Outubro:\n'
-      '11 - Novembro:\n'
-      '12 - Dezembro:\n')
-print('===='*15)
-mes = int(input('Informe o mês que deseja cadastrar as temperaturas:\n'))
+c = 1
+while c != 13:
+    if c == 1:
+        m = 'Janeiro'
+    elif c == 2:
+        m = 'Fevereiro'
+    elif c == 3:
+        m = 'Março'
+    elif c == 4:
+        m = 'Abril'
+    elif c == 5:
+        m = 'Maio'
+    elif c == 6:
+        m = 'Junho'
+    elif c == 7:
+        m = 'Julho'
+    elif c == 8:
+        m = 'Agosto'
+    elif c == 9:
+        m = 'Setembro'
+    elif c == 10:
+        m = 'Outubro'
+    elif c == 11:
+        m = 'Novembro'
+    elif c == 12:
+        m = 'Dezembro'
+
+    mes = float(input(f'Informe a média do mês de {m}:\n'))
+    print('====' * 10)
+    temperatura.append(mes)
+    c += 1
+    media_anual = sum(temperatura) / len(temperatura)
+
+for i in temperatura:
+    if i > media_anual:
+        mes = meses[temperatura.index(i)]
+        print('===='*10)
+        print(f'O mês de {mes} teve média de {i}.')
+
+print('===='*10)
+
 
 
