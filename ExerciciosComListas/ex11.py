@@ -7,28 +7,28 @@ b = []
 d = []
 inter = []
 c = 0
-while c != 2:
+while c != 10:
     n = int(input('Informe o {}° número do Vetor A.\n'.format(c + 1)))
     a.append(n)
     print('====' * 10)
     c += 1
 
 c = 0
-while c != 2:
+while c != 10:
     n = int(input('Informe o {}° número do Vetor B.\n'.format(c + 1)))
     b.append(n)
     print('======' * 10)
     c += 1
 
 c = 0
-while c != 2:
+while c != 10:
     n = int(input('Informe o {}° número do Vetor C.\n'.format(c + 1)))
     d.append(n)
     print('======' * 10)
     c += 1
 
 c = 0
-while c != 2:
+while c != 10:
     inter.append(a[c])
     inter.append(b[c])
     inter.append(d[c])
